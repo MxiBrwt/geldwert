@@ -3,433 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Check24 im Praxistest 2026: Diese vier Produkte sparen wirklich Geld — GELDWERT</title>
-<meta name="description" content="Strom & Gas, DSL, C24 Bank und Mietwagen: Wir haben die meistgenutzten Check24-Angebote über sechs Monate getestet. Wo sich der Wechsel 2026 lohnt — und wo nicht." />
+<title>GELDWERT — Unabhängige Tests &amp; Empfehlungen 2026: Energie, Internet, Finanzen, Reise</title>
+<meta name="description" content="GELDWERT testet, wo Sie 2026 wirklich Geld sparen: Strom & Gas, Glasfaser & DSL, Tagesgeld & Kreditkarten, Mietwagen. Unabhängige Bewertungen, echte Konditionen, klare Empfehlungen." />
 
-<!-- Open Graph -->
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Check24 im Praxistest 2026: Diese vier Produkte sparen wirklich Geld" />
-<meta property="og:description" content="Strom, DSL, Banking, Mietwagen — der unabhängige GELDWERT-Test der wichtigsten Check24-Angebote." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="GELDWERT — Unabhängige Tests & Empfehlungen 2026" />
+<meta property="og:description" content="Energie, Internet, Finanzen, Reise — wo sich der Wechsel 2026 wirklich lohnt." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-
-<style>
-  /* ============ TOKENS ============ */
-  :root{
-    --paper:#F4EEE1;
-    --paper-2:#FBF7EE;
-    --paper-3:#EFE7D5;
-    --ink:#1B1A17;
-    --ink-soft:#403B33;
-    --muted:#867E6F;
-    --line:#E0D6C1;
-    --line-strong:#CDC0A5;
-    --gold:#B7872A;
-    --gold-deep:#8F671A;
-    --gold-soft:#F0E3C0;
-    --green:#2E6B57;
-    --green-soft:#DDEAE2;
-    --red:#A8473A;
-    --red-soft:#F1DED9;
-
-    --shadow-sm:0 1px 2px rgba(27,26,23,.05), 0 2px 8px rgba(27,26,23,.04);
-    --shadow-md:0 6px 14px rgba(27,26,23,.07), 0 18px 40px rgba(27,26,23,.08);
-    --shadow-lg:0 20px 60px rgba(27,26,23,.14);
-
-    --serif:"Newsreader", Georgia, serif;
-    --display:"Fraunces", Georgia, serif;
-    --mono:"IBM Plex Mono", ui-monospace, monospace;
-
-    --measure:40rem;
-    --ease:cubic-bezier(.2,.7,.2,1);
-  }
-
-  *,*::before,*::after{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
-
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--serif);
-    font-size:1.18rem;
-    line-height:1.72;
-    font-optical-sizing:auto;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-    overflow-x:hidden;
-  }
-
-  /* paper grain */
-  body::before{
-    content:"";
-    position:fixed; inset:0; z-index:1; pointer-events:none;
-    opacity:.5; mix-blend-mode:multiply;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
-  }
-  /* warm vignette */
-  body::after{
-    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
-    background:radial-gradient(120% 90% at 50% -10%, rgba(255,250,238,.9), transparent 55%),
-               radial-gradient(120% 120% at 100% 100%, rgba(183,135,42,.06), transparent 50%);
-  }
-  main, header, footer{position:relative; z-index:2;}
-
-  ::selection{background:var(--gold-soft); color:var(--ink);}
-
-  a{color:inherit;}
-  img{max-width:100%; display:block;}
-
-  /* ============ READING PROGRESS ============ */
-  .progress{
-    position:fixed; top:0; left:0; height:3px; width:0%;
-    background:linear-gradient(90deg, var(--gold-deep), var(--gold));
-    z-index:100; transition:width .1s linear;
-  }
-
-  /* ============ HEADER ============ */
-  .masthead{
-    position:sticky; top:0; z-index:50;
-    background:color-mix(in srgb, var(--paper) 82%, transparent);
-    backdrop-filter:saturate(140%) blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .masthead-inner{
-    max-width:74rem; margin:0 auto; padding:.85rem 1.5rem;
-    display:flex; align-items:center; justify-content:space-between; gap:1rem;
-  }
-  .brand{display:flex; align-items:baseline; gap:.55rem; text-decoration:none;}
-  .brand-mark{
-    font-family:var(--display); font-weight:900; font-size:1.32rem; letter-spacing:.01em;
-    font-variation-settings:"SOFT" 40,"opsz" 40;
-  }
-  .brand-mark b{color:var(--gold-deep);}
-  .brand-tag{
-    font-family:var(--mono); font-size:.6rem; letter-spacing:.18em; text-transform:uppercase;
-    color:var(--muted); border-left:1px solid var(--line-strong); padding-left:.55rem;
-  }
-  .nav{display:flex; gap:1.6rem; align-items:center;}
-  .nav a{
-    font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
-    color:var(--ink-soft); text-decoration:none; position:relative; padding:.2rem 0;
-  }
-  .nav a::after{
-    content:""; position:absolute; left:0; bottom:-2px; height:1px; width:0;
-    background:var(--gold); transition:width .35s var(--ease);
-  }
-  .nav a:hover{color:var(--ink);}
-  .nav a:hover::after{width:100%;}
-  .ad-pill{
-    font-family:var(--mono); font-size:.6rem; letter-spacing:.16em; text-transform:uppercase;
-    color:var(--gold-deep); border:1px solid var(--gold); border-radius:999px;
-    padding:.28rem .6rem; white-space:nowrap;
-  }
-  @media(max-width:860px){ .nav{display:none;} }
-
-  /* ============ HERO ============ */
-  .hero{
-    max-width:74rem; margin:0 auto; padding:4.2rem 1.5rem 2.4rem;
-    display:grid; grid-template-columns:1.55fr .95fr; gap:3.2rem; align-items:start;
-  }
-  .kicker{
-    font-family:var(--mono); font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
-    color:var(--gold-deep); display:flex; align-items:center; gap:.7rem; margin-bottom:1.4rem;
-  }
-  .kicker::before{ content:""; width:2.2rem; height:1px; background:var(--gold); }
-
-  .crumbs{
-    font-family:var(--mono); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase;
-    color:var(--muted); margin-bottom:1.2rem; display:flex; flex-wrap:wrap; gap:.5rem; align-items:center;
-  }
-  .crumbs a{ color:var(--ink-soft); text-decoration:none; }
-  .crumbs a:hover{ color:var(--gold-deep); }
-  .crumbs span{ color:var(--line-strong); }
-  .crumbs b{ color:var(--ink); font-weight:500; }
-
-  .headline{
-    font-family:var(--display); font-weight:600; font-optical-sizing:auto;
-    font-variation-settings:"SOFT" 60,"opsz" 144,"WONK" 0;
-    font-size:clamp(2.5rem, 5.6vw, 4.4rem); line-height:1.02; letter-spacing:-.018em;
-    margin:0 0 1.4rem;
-  }
-  .headline em{ font-style:italic; color:var(--gold-deep); font-variation-settings:"SOFT" 80,"opsz" 80; }
-
-  .deck{
-    font-size:1.34rem; line-height:1.55; color:var(--ink-soft); max-width:34rem;
-    font-weight:330; margin:0 0 2rem;
-  }
-  .byline{
-    display:flex; flex-wrap:wrap; align-items:center; gap:.9rem;
-    font-family:var(--mono); font-size:.74rem; letter-spacing:.04em; color:var(--muted);
-    border-top:1px solid var(--line); padding-top:1.2rem;
-  }
-  .byline .author{color:var(--ink); font-weight:500;}
-  .byline .dot{ width:3px; height:3px; border-radius:50%; background:var(--line-strong); }
-
-  /* verdict card */
-  .verdict{
-    background:var(--paper-2); border:1px solid var(--line-strong); border-radius:14px;
-    box-shadow:var(--shadow-md); overflow:hidden; position:sticky; top:5.4rem;
-  }
-  .verdict-head{
-    background:var(--ink); color:var(--paper); padding:1.1rem 1.3rem;
-    display:flex; align-items:flex-end; justify-content:space-between; gap:1rem;
-  }
-  .verdict-head span{
-    font-family:var(--mono); font-size:.62rem; letter-spacing:.2em; text-transform:uppercase;
-    color:var(--gold-soft);
-  }
-  .verdict-score{ display:flex; align-items:baseline; gap:.2rem; }
-  .verdict-score b{ font-family:var(--display); font-weight:600; font-size:2.5rem; line-height:1; }
-  .verdict-score i{ font-style:normal; font-family:var(--mono); font-size:.85rem; color:var(--gold-soft); }
-  .verdict-list{ list-style:none; margin:0; padding:.4rem 0; }
-  .verdict-list li{
-    display:flex; align-items:center; justify-content:space-between; gap:.8rem;
-    padding:.72rem 1.3rem; border-bottom:1px solid var(--line);
-  }
-  .verdict-list li:last-child{border-bottom:none;}
-  .vl-name{ font-family:var(--display); font-weight:500; font-size:1.02rem; }
-  .vl-name small{
-    display:block; font-family:var(--mono); font-size:.6rem; letter-spacing:.08em;
-    text-transform:uppercase; color:var(--muted); font-weight:400; margin-top:.1rem;
-  }
-  .vl-score{ font-family:var(--mono); font-weight:600; font-size:.9rem; color:var(--gold-deep); white-space:nowrap; }
-
-  /* ============ STARS ============ */
-  .stars{ position:relative; display:inline-block; font-size:1rem; line-height:1; letter-spacing:2px; font-family:Arial, sans-serif; vertical-align:middle;}
-  .stars::before{ content:"★★★★★"; color:var(--line-strong); }
-  .stars > i{ position:absolute; top:0; left:0; overflow:hidden; white-space:nowrap; color:var(--gold); }
-  .stars > i::before{ content:"★★★★★"; letter-spacing:2px; }
-
-  /* ============ DISCLOSURE ============ */
-  .disclosure{
-    max-width:74rem; margin:0 auto 1rem; padding:0 1.5rem;
-  }
-  .disclosure-inner{
-    display:flex; gap:.9rem; align-items:flex-start;
-    background:var(--gold-soft); border:1px solid var(--gold);
-    border-radius:10px; padding:.9rem 1.1rem;
-    font-size:.92rem; line-height:1.5; color:var(--ink-soft);
-  }
-  .disclosure-inner svg{ flex:none; margin-top:.15rem; color:var(--gold-deep); }
-  .disclosure-inner b{ color:var(--ink); }
-
-  /* ============ ARTICLE LAYOUT ============ */
-  .layout{
-    max-width:74rem; margin:0 auto; padding:2.6rem 1.5rem 4rem;
-    display:grid; grid-template-columns:14rem minmax(0,1fr); gap:3.4rem;
-  }
-  .toc{ position:sticky; top:5.4rem; align-self:start; }
-  .toc h4{
-    font-family:var(--mono); font-size:.66rem; letter-spacing:.2em; text-transform:uppercase;
-    color:var(--muted); margin:0 0 1rem; padding-bottom:.6rem; border-bottom:1px solid var(--line);
-  }
-  .toc ol{ list-style:none; margin:0; padding:0; counter-reset:toc; }
-  .toc li{ counter-increment:toc; }
-  .toc a{
-    display:flex; gap:.7rem; text-decoration:none; color:var(--ink-soft);
-    font-size:.96rem; line-height:1.35; padding:.5rem 0; border-left:2px solid transparent;
-    padding-left:.9rem; margin-left:-.9rem; transition:all .3s var(--ease);
-  }
-  .toc a::before{
-    content:counter(toc,decimal-leading-zero); font-family:var(--mono); font-size:.68rem;
-    color:var(--muted); padding-top:.15rem;
-  }
-  .toc a:hover{ color:var(--ink); }
-  .toc a.active{ color:var(--ink); border-left-color:var(--gold); }
-  .toc a.active::before{ color:var(--gold-deep); }
-  @media(max-width:980px){ .toc{display:none;} }
-
-  .article{ max-width:var(--measure); }
-  .article > p, .article > h2, .article > h3, .article > .pullquote, .article > .factbox{ }
-
-  .article h2{
-    font-family:var(--display); font-weight:600; font-variation-settings:"SOFT" 50,"opsz" 80;
-    font-size:clamp(1.9rem,3.4vw,2.6rem); line-height:1.08; letter-spacing:-.012em;
-    margin:3.6rem 0 1.1rem; scroll-margin-top:6rem;
-  }
-  .sec-num{
-    font-family:var(--mono); font-size:.72rem; letter-spacing:.2em; color:var(--gold-deep);
-    display:block; margin-bottom:.5rem; text-transform:uppercase;
-  }
-  .article h3{
-    font-family:var(--display); font-weight:600; font-size:1.4rem; margin:2.4rem 0 .8rem;
-  }
-  .article p{ margin:0 0 1.35rem; }
-  .lead{ font-size:1.32rem; line-height:1.6; color:var(--ink-soft); }
-
-  /* drop cap */
-  .dropcap::first-letter{
-    font-family:var(--display); font-weight:600; font-variation-settings:"SOFT" 100,"opsz" 144;
-    float:left; font-size:4.6rem; line-height:.78; padding:.35rem .55rem 0 0; color:var(--gold-deep);
-  }
-
-  .article a.inline{ color:var(--gold-deep); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; text-decoration-color:var(--gold); }
-  .article a.inline:hover{ background:var(--gold-soft); }
-
-  /* pull quote */
-  .pullquote{
-    margin:2.6rem 0; padding:.4rem 0 .4rem 1.6rem; border-left:3px solid var(--gold);
-    font-family:var(--display); font-weight:400; font-style:italic;
-    font-size:clamp(1.5rem,2.6vw,1.95rem); line-height:1.3; color:var(--ink);
-    font-variation-settings:"SOFT" 70,"opsz" 60;
-  }
-  .pullquote cite{ display:block; margin-top:.8rem; font-family:var(--mono); font-style:normal; font-size:.74rem; letter-spacing:.06em; color:var(--muted); }
-
-  /* ============ PRODUCT CARD ============ */
-  .product{
-    margin:2rem 0 2.4rem; background:var(--paper-2);
-    border:1px solid var(--line-strong); border-radius:16px;
-    box-shadow:var(--shadow-sm); overflow:hidden;
-  }
-  .product-top{
-    display:flex; flex-wrap:wrap; gap:1rem 1.4rem; align-items:center; justify-content:space-between;
-    padding:1.4rem 1.6rem; background:linear-gradient(180deg, var(--paper-3), var(--paper-2));
-    border-bottom:1px solid var(--line);
-  }
-  .product-id{ display:flex; align-items:center; gap:1rem; }
-  .product-glyph{
-    width:52px; height:52px; border-radius:12px; flex:none;
-    display:grid; place-items:center; background:var(--ink); color:var(--gold-soft);
-    box-shadow:var(--shadow-sm);
-  }
-  .product-glyph svg{ width:26px; height:26px; }
-  .product-id h3{ margin:0; font-family:var(--display); font-weight:600; font-size:1.42rem; line-height:1.1; }
-  .product-id p{ margin:.15rem 0 0; font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
-  .product-rate{ text-align:right; }
-  .product-rate .num{ font-family:var(--display); font-weight:600; font-size:1.7rem; line-height:1; }
-  .product-rate .num small{ font-family:var(--mono); font-size:.8rem; color:var(--muted); font-weight:400; }
-  .product-rate .stars{ margin-top:.3rem; }
-
-  .product-body{ padding:1.5rem 1.6rem 1.7rem; }
-  .product-body > p{ margin:0 0 1.2rem; font-size:1.08rem; line-height:1.6; }
-
-  .proscons{ display:grid; grid-template-columns:1fr 1fr; gap:1rem 1.6rem; margin:1.3rem 0; }
-  .proscons h5{
-    font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase;
-    margin:0 0 .7rem; display:flex; align-items:center; gap:.4rem;
-  }
-  .pros h5{ color:var(--green); }
-  .cons h5{ color:var(--red); }
-  .proscons ul{ list-style:none; margin:0; padding:0; }
-  .proscons li{ font-size:.98rem; line-height:1.45; padding-left:1.5rem; position:relative; margin-bottom:.55rem; }
-  .pros li::before{ content:"+"; position:absolute; left:0; top:-.05rem; color:var(--green); font-weight:700; font-family:var(--mono); }
-  .cons li::before{ content:"–"; position:absolute; left:.1rem; top:-.05rem; color:var(--red); font-weight:700; font-family:var(--mono); }
-  @media(max-width:560px){ .proscons{ grid-template-columns:1fr; } }
-
-  .facts{
-    display:flex; flex-wrap:wrap; gap:0; border:1px solid var(--line);
-    border-radius:10px; overflow:hidden; margin:1.3rem 0 1.5rem; background:var(--paper);
-  }
-  .fact{ flex:1 1 33%; min-width:120px; padding:.85rem 1rem; border-right:1px solid var(--line); }
-  .fact:last-child{ border-right:none; }
-  .fact dt{ font-family:var(--mono); font-size:.58rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.25rem; }
-  .fact dd{ margin:0; font-family:var(--display); font-weight:600; font-size:1.18rem; }
-  .fact dd small{ font-size:.78rem; font-family:var(--serif); font-weight:400; color:var(--ink-soft); }
-
-  /* CTA */
-  .cta-row{ display:flex; flex-wrap:wrap; align-items:center; gap:1rem; margin-top:.4rem; }
-  .cta{
-    --c:var(--ink);
-    position:relative; overflow:hidden; isolation:isolate;
-    display:inline-flex; align-items:center; gap:.6rem;
-    font-family:var(--mono); font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; font-weight:500;
-    text-decoration:none; color:var(--paper-2); background:var(--c);
-    padding:.95rem 1.6rem; border-radius:999px; border:1px solid var(--c);
-    transition:transform .25s var(--ease), box-shadow .25s var(--ease);
-  }
-  .cta::before{
-    content:""; position:absolute; inset:0; z-index:-1; transform:translateY(101%);
-    background:linear-gradient(90deg,var(--gold-deep),var(--gold)); transition:transform .35s var(--ease);
-  }
-  .cta:hover{ transform:translateY(-2px); box-shadow:var(--shadow-md); }
-  .cta:hover::before{ transform:translateY(0); }
-  .cta svg{ transition:transform .25s var(--ease); }
-  .cta:hover svg{ transform:translate(3px,-3px); }
-  .cta-note{ font-family:var(--mono); font-size:.66rem; letter-spacing:.05em; color:var(--muted); }
-
-  /* ============ COMPARISON TABLE ============ */
-  .table-wrap{ margin:1.6rem 0 1rem; overflow-x:auto; border:1px solid var(--line-strong); border-radius:12px; }
-  table{ width:100%; border-collapse:collapse; font-size:.96rem; min-width:520px; }
-  thead th{
-    font-family:var(--mono); font-size:.64rem; letter-spacing:.12em; text-transform:uppercase;
-    text-align:left; color:var(--paper); background:var(--ink); padding:.85rem 1rem; font-weight:500;
-  }
-  tbody td{ padding:.85rem 1rem; border-top:1px solid var(--line); }
-  tbody tr:nth-child(even){ background:var(--paper-2); }
-  td .pname{ font-family:var(--display); font-weight:600; }
-  td .score{ font-family:var(--mono); font-weight:600; color:var(--gold-deep); }
-  .badge{
-    font-family:var(--mono); font-size:.6rem; letter-spacing:.08em; text-transform:uppercase;
-    padding:.2rem .5rem; border-radius:5px; background:var(--green-soft); color:var(--green);
-  }
-
-  /* ============ FAQ ============ */
-  .faq details{
-    border-bottom:1px solid var(--line); padding:.4rem 0;
-  }
-  .faq summary{
-    cursor:pointer; list-style:none; padding:1rem .2rem; display:flex; justify-content:space-between; gap:1rem;
-    font-family:var(--display); font-weight:600; font-size:1.18rem; align-items:center;
-  }
-  .faq summary::-webkit-details-marker{ display:none; }
-  .faq summary::after{
-    content:"+"; font-family:var(--mono); font-weight:400; font-size:1.5rem; color:var(--gold-deep);
-    transition:transform .3s var(--ease); line-height:1;
-  }
-  .faq details[open] summary::after{ transform:rotate(45deg); }
-  .faq details p{ padding:0 .2rem 1.1rem; margin:0; color:var(--ink-soft); font-size:1.04rem; }
-
-  /* ============ FINAL VERDICT ============ */
-  .finale{
-    margin:3rem 0 0; padding:2.2rem 2rem; border-radius:16px;
-    background:var(--ink); color:var(--paper); box-shadow:var(--shadow-lg); position:relative; overflow:hidden;
-  }
-  .finale::after{
-    content:""; position:absolute; right:-60px; top:-60px; width:240px; height:240px; border-radius:50%;
-    background:radial-gradient(circle, rgba(183,135,42,.35), transparent 70%);
-  }
-  .finale .sec-num{ color:var(--gold-soft); }
-  .finale h2{ color:var(--paper); margin:.2rem 0 1rem; }
-  .finale p{ color:#D9D2C4; }
-  .finale .cta{ background:var(--gold); border-color:var(--gold); color:var(--ink); margin-top:.6rem; }
-  .finale .cta::before{ background:linear-gradient(90deg,#fff,var(--gold-soft)); }
-  .finale .cta:hover{ color:var(--ink); }
-
-  /* ============ FOOTER ============ */
-  footer{ border-top:1px solid var(--line); background:var(--paper-3); margin-top:4rem; }
-  .foot-inner{ max-width:74rem; margin:0 auto; padding:2.6rem 1.5rem; display:grid; grid-template-columns:1.4fr 1fr; gap:2rem; }
-  .foot-inner p{ font-size:.92rem; color:var(--muted); line-height:1.6; max-width:32rem; }
-  .foot-brand{ font-family:var(--display); font-weight:900; font-size:1.4rem; font-variation-settings:"SOFT" 40,"opsz" 40; }
-  .foot-brand b{ color:var(--gold-deep); }
-  .foot-links{ display:flex; flex-direction:column; gap:.6rem; }
-  .foot-links a{ font-family:var(--mono); font-size:.74rem; letter-spacing:.06em; color:var(--ink-soft); text-decoration:none; }
-  .foot-links a:hover{ color:var(--gold-deep); }
-  .copyright{ max-width:74rem; margin:0 auto; padding:1.2rem 1.5rem 2.4rem; border-top:1px solid var(--line); font-family:var(--mono); font-size:.66rem; letter-spacing:.06em; color:var(--muted); }
-  @media(max-width:680px){ .foot-inner{ grid-template-columns:1fr; } }
-
-  /* ============ REVEAL ANIMATIONS ============ */
-  @keyframes rise{ from{opacity:0; transform:translateY(22px);} to{opacity:1; transform:none;} }
-  .reveal{ opacity:0; }
-  .reveal.in{ animation:rise .8s var(--ease) forwards; }
-
-  .hero > * > .anim, .hero .anim{ opacity:0; animation:rise .9s var(--ease) forwards; }
-  .a1{ animation-delay:.05s; } .a2{ animation-delay:.18s; } .a3{ animation-delay:.3s; }
-  .a4{ animation-delay:.42s; } .a5{ animation-delay:.54s; } .a6{ animation-delay:.66s; }
-
-  @media (prefers-reduced-motion:reduce){
-    .reveal,.hero .anim{ opacity:1 !important; animation:none !important; }
-  }
-
-  @media(max-width:860px){
-    .hero{ grid-template-columns:1fr; gap:2.4rem; padding-top:2.8rem; }
-    .verdict{ position:static; }
-    body{ font-size:1.1rem; }
-  }
-</style>
+<link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 
@@ -438,16 +22,16 @@
 <!-- ============ MASTHEAD ============ -->
 <header class="masthead">
   <div class="masthead-inner">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <span class="brand-mark">GELD<b>WERT</b></span>
       <span class="brand-tag">Unabhängige Tests &amp; Empfehlungen</span>
     </a>
     <nav class="nav">
-      <a href="#">Energie</a>
-      <a href="#">Internet</a>
-      <a href="#">Finanzen</a>
-      <a href="#">Reise</a>
-      <a href="#">Alle Tests</a>
+      <a href="energie.html">Energie</a>
+      <a href="internet.html">Internet</a>
+      <a href="finanzen.html">Finanzen</a>
+      <a href="reise.html">Reise</a>
+      <a href="tests.html">Alle Tests</a>
     </nav>
     <span class="ad-pill">Anzeige · Affiliate</span>
   </div>
@@ -455,360 +39,179 @@
 
 <main id="top">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div>
-      <nav class="crumbs anim a1" aria-label="Brotkrumen">
-        <a href="#">Tests</a><span>/</span><a href="#">Vergleichsportale</a><span>/</span><b>Check24</b>
-      </nav>
-      <div class="kicker anim a2">Ratgeber · Vergleichsportale</div>
-      <h1 class="headline anim a3">Check24 im Praxistest: vier Produkte, die&nbsp;2026 <em>wirklich</em> Geld sparen</h1>
-      <p class="deck anim a4">Strom, DSL, Banking und Mietwagen — wir haben die meistgenutzten Check24-Angebote sechs Monate lang im Alltag geprüft. Wo sich der Wechsel lohnt, wo nicht, und worauf Sie vor dem Abschluss achten sollten.</p>
-      <div class="byline anim a5">
-        <span class="author">Von Maxi Berwart</span>
-        <span class="dot"></span>
-        <span>Aktualisiert 6. Juni 2026</span>
-        <span class="dot"></span>
-        <span>Lesezeit 11 Min.</span>
-      </div>
+  <!-- ============ HOME HERO ============ -->
+  <section class="home-hero">
+    <div class="kicker anim a1">Stand Juni 2026 · 100&nbsp;% redaktionell</div>
+    <h1 class="home-headline anim a2">Wo Sie 2026 <em>wirklich</em> Geld sparen.</h1>
+    <p class="home-deck anim a3">GELDWERT prüft Tarife, Konten und Buchungsportale mit echten Konditionen — von Strom und Glasfaser über Tagesgeld bis zum Mietwagen. Keine Werbeversprechen, sondern nachvollziehbare Noten und konkrete Empfehlungen für jede Lebenslage.</p>
+    <div class="home-actions anim a4">
+      <a class="cta" href="tests.html">Alle Tests ansehen
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+      <a class="cta ghost" href="check24.html">Zum Check24-Praxistest</a>
     </div>
-
-    <aside class="verdict anim a6" aria-label="Redaktions-Urteil">
-      <div class="verdict-head">
-        <span>Redaktions-Urteil</span>
-        <div class="verdict-score"><b>4,6</b><i>/5</i></div>
-      </div>
-      <ul class="verdict-list">
-        <li>
-          <span class="vl-name">Strom &amp; Gas <small>Bestes Sparpotenzial</small></span>
-          <span class="vl-score">4,7</span>
-        </li>
-        <li>
-          <span class="vl-name">DSL &amp; Internet <small>Beste Bonus-Deals</small></span>
-          <span class="vl-score">4,5</span>
-        </li>
-        <li>
-          <span class="vl-name">C24 Bank <small>Bestes Gratis-Konto</small></span>
-          <span class="vl-score">4,8</span>
-        </li>
-        <li>
-          <span class="vl-name">Mietwagen <small>Beste Auswahl</small></span>
-          <span class="vl-score">4,4</span>
-        </li>
-      </ul>
-    </aside>
   </section>
 
-  <!-- ============ DISCLOSURE ============ -->
-  <div class="disclosure">
-    <div class="disclosure-inner">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5v.01"/></svg>
-      <p style="margin:0;"><b>Transparenz-Hinweis (Werbung):</b> Dieser Beitrag enthält Affiliate-Links zu unseren Partnern. Schließen Sie über einen dieser Links ab, erhalten wir eine Provision — für Sie entstehen dadurch keine Mehrkosten. Unsere Test­bewertungen entstehen unabhängig und werden davon nicht beeinflusst.</p>
+  <!-- ============ TRUST STRIP ============ -->
+  <div class="trust">
+    <div class="trust-inner">
+      <div class="trust-cell"><div class="tn">4</div><div class="tl">getestete Bereiche</div></div>
+      <div class="trust-cell"><div class="tn">850&nbsp;€</div><div class="tl">max. Strom-Ersparnis*</div></div>
+      <div class="trust-cell"><div class="tn">2,0&nbsp;%</div><div class="tl">Top-Tagesgeldzins</div></div>
+      <div class="trust-cell"><div class="tn">0&nbsp;€</div><div class="tl">Kosten für Leser</div></div>
     </div>
   </div>
 
-  <!-- ============ ARTICLE LAYOUT ============ -->
-  <div class="layout">
+  <!-- ============ SECTIONS ============ -->
+  <div class="section-head">
+    <div>
+      <span class="sec-num">Rubriken</span>
+      <h2>Vier Bereiche, in denen sich der Vergleich lohnt</h2>
+    </div>
+    <a class="more" href="tests.html">Alle Tests
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="section-grid">
 
-    <!-- TOC -->
-    <nav class="toc" aria-label="Inhaltsverzeichnis">
-      <h4>Inhalt</h4>
-      <ol>
-        <li><a href="#einleitung" class="toc-link">Worauf es ankommt</a></li>
-        <li><a href="#strom" class="toc-link">Strom &amp; Gas</a></li>
-        <li><a href="#dsl" class="toc-link">DSL &amp; Internet</a></li>
-        <li><a href="#bank" class="toc-link">C24 Bank</a></li>
-        <li><a href="#mietwagen" class="toc-link">Mietwagen</a></li>
-        <li><a href="#vergleich" class="toc-link">Vergleich im Überblick</a></li>
-        <li><a href="#faq" class="toc-link">Häufige Fragen</a></li>
-        <li><a href="#fazit" class="toc-link">Fazit</a></li>
-      </ol>
-    </nav>
+    <a class="section-card reveal" href="energie.html">
+      <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+      <h3>Energie</h3>
+      <p>Strom &amp; Gas: Wechselboni, Folgepreise und das Spar­potenzial gegenüber der Grundversorgung.</p>
+      <span class="arrow">Zum Energie-Test <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+    </a>
 
-    <!-- ARTICLE -->
-    <article class="article">
+    <a class="section-card reveal" href="internet.html">
+      <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 9.5a15 15 0 0 1 20 0"/><circle cx="12" cy="20" r="1"/></svg></div>
+      <h3>Internet</h3>
+      <p>Glasfaser &amp; DSL: Verfügbarkeit, Effektivpreise und welche Neukundenboni sich 2026 lohnen.</p>
+      <span class="arrow">Zum Internet-Test <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+    </a>
 
-      <p class="lead dropcap reveal" id="einleitung">Vergleichsportale versprechen viel — aber halten sie auch, was sie versprechen? Wir wollten es genau wissen und haben über sechs Monate vier der gefragtesten Check24-Produkte tatsächlich genutzt: vom Stromtarif über den DSL-Anschluss bis zum kostenlosen Girokonto und der Mietwagen-Buchung für den Sommerurlaub.</p>
+    <a class="section-card reveal" href="finanzen.html">
+      <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9"/><path d="M19 10v9"/><path d="M9 10v9"/><path d="M15 10v9"/><path d="M3 21h18"/></svg></div>
+      <h3>Finanzen</h3>
+      <p>Tagesgeld, Girokonto &amp; Kreditkarte: Wo es die besten Zinsen und gebührenfreie Karten gibt.</p>
+      <span class="arrow">Zum Finanz-Test <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+    </a>
 
-      <p class="reveal">Das Ergebnis vorweg: Die größten Ersparnisse stecken nicht dort, wo am lautesten geworben wird, sondern in den eher unscheinbaren Kategorien. Wer einmal im Jahr systematisch vergleicht, holt sich realistisch einen niedrigen dreistelligen Betrag zurück — ohne Komfortverlust. Im Folgenden zeigen wir Produkt für Produkt, was uns überzeugt hat, wo wir Abstriche machen mussten und für wen sich der Abschluss konkret lohnt.</p>
+    <a class="section-card reveal" href="reise.html">
+      <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14"/><path d="m4 17-1-5 2-5h14l2 5-1 5"/><path d="M5 12h14"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/></svg></div>
+      <h3>Reise</h3>
+      <p>Mietwagen &amp; Co.: Vollkasko ohne Selbstbeteiligung, faire Tankregeln und die besten Portale.</p>
+      <span class="arrow">Zum Reise-Test <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+    </a>
 
-      <blockquote class="pullquote reveal">„Der eigentliche Hebel ist nicht der Wechsel an sich — sondern die Gewohnheit, einmal im Jahr fünf Minuten zu vergleichen.“<cite>— GELDWERT Redaktion</cite></blockquote>
+  </div>
 
-      <!-- ===== STROM ===== -->
-      <h2 id="strom" class="reveal"><span class="sec-num">01 — Energie</span>Strom &amp; Gas: der unterschätzte Spar-Klassiker</h2>
-      <p class="reveal">Kaum ein Wechsel rechnet sich so verlässlich wie der bei Strom und Gas. Wer noch in der Grundversorgung steckt, zahlt fast immer drauf. Im Check24-Vergleich landeten wir je nach Postleitzahl bei <strong>180 bis 340&nbsp;Euro</strong> Ersparnis im ersten Jahr — ein großer Teil davon stammt aus Neukunden-Boni, die das Portal automatisch mit einrechnet.</p>
-
-      <div class="product reveal" aria-label="Bewertung Strom und Gas">
-        <div class="product-top">
-          <div class="product-id">
-            <div class="product-glyph">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
-            </div>
-            <div>
-              <h3>Strom- &amp; Gasvergleich</h3>
-              <p>Energie · Grundversorgung</p>
-            </div>
-          </div>
-          <div class="product-rate">
-            <div class="num">4,7<small>/5</small></div>
-            <div class="stars"><i style="width:94%"></i></div>
-          </div>
-        </div>
-        <div class="product-body">
-          <p>Die Bedienung ist denkbar einfach: Postleitzahl und Verbrauch eingeben, fertig. Stark ist vor allem der „Bonus berücksichtigen“-Filter, der Lockangebote mit hohem Erst­jahres­bonus, aber teurem Folgepreis sichtbar macht. Wir empfehlen, die maximale Vertragslaufzeit auf 12&nbsp;Monate und die Preisgarantie zu aktivieren.</p>
-
-          <div class="proscons">
-            <div class="pros">
-              <h5>Vorteile</h5>
-              <ul>
-                <li>Sehr hohe Ersparnis gegenüber der Grundversorgung</li>
-                <li>Filter für faire Folgepreise statt reiner Lock-Boni</li>
-                <li>Wechsel inkl. Kündigung läuft komplett automatisch</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h5>Nachteile</h5>
-              <ul>
-                <li>Beste Tarife oft mit Vorkasse oder Kaution</li>
-                <li>Folgepreis nach Bonusjahr selbst im Blick behalten</li>
-              </ul>
-            </div>
-          </div>
-
-          <dl class="facts">
-            <div class="fact"><dt>Ersparnis / Jahr</dt><dd>180–340&nbsp;<small>€</small></dd></div>
-            <div class="fact"><dt>Aufwand</dt><dd>≈ 5&nbsp;<small>Min.</small></dd></div>
-            <div class="fact"><dt>Empfehlung</dt><dd>12-Monats-Tarif</dd></div>
-          </dl>
-
-          <div class="cta-row">
-            <a class="cta" href="#" rel="sponsored nofollow noopener" target="_blank">Strompreise vergleichen
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-            </a>
-            <span class="cta-note">* Affiliate-Link zu Check24</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== DSL ===== -->
-      <h2 id="dsl" class="reveal"><span class="sec-num">02 — Internet</span>DSL &amp; Internet: hier zählen die Boni</h2>
-      <p class="reveal">Beim Internetanschluss unterscheiden sich die monatlichen Grundpreise weniger stark, als man denkt — den Unterschied machen <strong>Sofort-Boni, Hardware-Gutschriften und Aktions­rabatte</strong>. Über Check24 lagen die Neukunden­prämien im Testzeitraum spürbar höher als auf den Anbieter­seiten selbst, teils inklusive Cashback nach Schaltung.</p>
-
-      <div class="product reveal" aria-label="Bewertung DSL">
-        <div class="product-top">
-          <div class="product-id">
-            <div class="product-glyph">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 9.5a15 15 0 0 1 20 0"/><circle cx="12" cy="20" r="1"/></svg>
-            </div>
-            <div>
-              <h3>DSL- &amp; Internetvergleich</h3>
-              <p>Internet · Anbieterwechsel</p>
-            </div>
-          </div>
-          <div class="product-rate">
-            <div class="num">4,5<small>/5</small></div>
-            <div class="stars"><i style="width:90%"></i></div>
-          </div>
-        </div>
-        <div class="product-body">
-          <p>Praktisch: Check24 prüft per Adresse direkt die real verfügbare Technik und Bandbreite — keine Buchung von Tarifen, die am eigenen Anschluss gar nicht ankommen. Die effektive Monatsrate inklusive aller Boni wird transparent über die Mindestlaufzeit umgerechnet, was den Vergleich ehrlich macht.</p>
-
-          <div class="proscons">
-            <div class="pros">
-              <h5>Vorteile</h5>
-              <ul>
-                <li>Verfügbarkeitsprüfung nach Adresse in Echtzeit</li>
-                <li>Exklusive Boni und Cashback-Aktionen</li>
-                <li>Effektivpreis über die gesamte Laufzeit sichtbar</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h5>Nachteile</h5>
-              <ul>
-                <li>Cashback wird teils erst nach Wochen ausgezahlt</li>
-                <li>Aktionspreise gelten oft nur im ersten Jahr</li>
-              </ul>
-            </div>
-          </div>
-
-          <dl class="facts">
-            <div class="fact"><dt>Bonus möglich</dt><dd>bis 200&nbsp;<small>€</small></dd></div>
-            <div class="fact"><dt>Verfügbarkeit</dt><dd>Adress-Check</dd></div>
-            <div class="fact"><dt>Empfehlung</dt><dd>Glasfaser zuerst</dd></div>
-          </dl>
-
-          <div class="cta-row">
-            <a class="cta" href="#" rel="sponsored nofollow noopener" target="_blank">DSL-Tarife vergleichen
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-            </a>
-            <span class="cta-note">* Affiliate-Link zu Check24</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== C24 BANK ===== -->
-      <h2 id="bank" class="reveal"><span class="sec-num">03 — Banking</span>C24 Bank: das Girokonto als Spar-Zentrale</h2>
-      <p class="reveal">Die C24 Bank ist Check24s eigene Bank — und das überzeugendste Einzelprodukt im Test. Das <strong>kostenlose Girokonto</strong> kommt mit attraktiver Verzinsung auf dem Tagesgeld-Pocket und nahtloser Anbindung an das gesamte Vergleichsportal. Wer ohnehin über Check24 abschließt, bündelt Verträge, Cashback und Konto an einer Stelle.</p>
-
-      <div class="product reveal" aria-label="Bewertung C24 Bank">
-        <div class="product-top">
-          <div class="product-id">
-            <div class="product-glyph">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9"/><path d="M19 10v9"/><path d="M9 10v9"/><path d="M15 10v9"/><path d="M3 21h18"/></svg>
-            </div>
-            <div>
-              <h3>C24 Girokonto</h3>
-              <p>Banking · Tagesgeld</p>
-            </div>
-          </div>
-          <div class="product-rate">
-            <div class="num">4,8<small>/5</small></div>
-            <div class="stars"><i style="width:96%"></i></div>
-          </div>
-        </div>
-        <div class="product-body">
-          <p>Die Kontoeröffnung lief vollständig digital in unter zehn Minuten. Im Alltag überzeugen die Echtzeit-Push­benachrichtigungen, mehrere „Pockets“ zum Aufteilen des Guthabens und eine aufgeräumte App. Für ein komplett kostenloses Konto ist die gebotene Verzinsung auf das Guthaben bemerkenswert — gerade als Parkplatz für die Notfallreserve.</p>
-
-          <div class="proscons">
-            <div class="pros">
-              <h5>Vorteile</h5>
-              <ul>
-                <li>Dauerhaft kostenloses Girokonto inkl. Karte</li>
-                <li>Attraktive Verzinsung auf dem Tagesgeld-Pocket</li>
-                <li>Eröffnung in unter 10 Minuten, starke App</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h5>Nachteile</h5>
-              <ul>
-                <li>Reines Online-Konto ohne Filialnetz</li>
-                <li>Bargeldabhebungen teils kostenpflichtig</li>
-              </ul>
-            </div>
-          </div>
-
-          <dl class="facts">
-            <div class="fact"><dt>Kontoführung</dt><dd>0&nbsp;<small>€ / Monat</small></dd></div>
-            <div class="fact"><dt>Eröffnung</dt><dd>&lt; 10&nbsp;<small>Min.</small></dd></div>
-            <div class="fact"><dt>Tagesgeld</dt><dd>inkl. Pocket</dd></div>
-          </dl>
-
-          <div class="cta-row">
-            <a class="cta" href="#" rel="sponsored nofollow noopener" target="_blank">Konto kostenlos eröffnen
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-            </a>
-            <span class="cta-note">* Affiliate-Link zur C24 Bank</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== MIETWAGEN ===== -->
-      <h2 id="mietwagen" class="reveal"><span class="sec-num">04 — Reise</span>Mietwagen: große Auswahl, klare Spielregeln</h2>
-      <p class="reveal">Für den Sommerurlaub haben wir mehrere Mietwagen über Check24 gebucht. Der Vergleich bündelt internationale Vermieter und lokale Anbieter und filtert zuverlässig nach dem, worauf es wirklich ankommt: <strong>Vollkasko ohne Selbstbeteiligung</strong> und transparente Tankregelung. So vermeidet man die teuren Überraschungen direkt am Schalter.</p>
-
-      <div class="product reveal" aria-label="Bewertung Mietwagen">
-        <div class="product-top">
-          <div class="product-id">
-            <div class="product-glyph">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14"/><path d="m4 17-1-5 2-5h14l2 5-1 5"/><path d="M5 12h14"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/></svg>
-            </div>
-            <div>
-              <h3>Mietwagenvergleich</h3>
-              <p>Reise · Urlaub</p>
-            </div>
-          </div>
-          <div class="product-rate">
-            <div class="num">4,4<small>/5</small></div>
-            <div class="stars"><i style="width:88%"></i></div>
-          </div>
-        </div>
-        <div class="product-body">
-          <p>Der Filter „Vollkasko ohne Selbstbeteiligung“ ist Gold wert und sollte immer gesetzt sein — er erspart die überteuerten Zusatz­versicherungen vor Ort. Kostenlose Stornierung bis kurz vor Anmietung gibt zusätzlich Flexibilität. Einziger Wermutstropfen: Bei einzelnen lokalen Anbietern schwankt die Service­qualität, ein Blick in die Bewertungen lohnt sich.</p>
-
-          <div class="proscons">
-            <div class="pros">
-              <h5>Vorteile</h5>
-              <ul>
-                <li>Riesige Auswahl internationaler &amp; lokaler Vermieter</li>
-                <li>Filter für Vollkasko ohne Selbstbeteiligung</li>
-                <li>Häufig kostenlose Stornierung möglich</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h5>Nachteile</h5>
-              <ul>
-                <li>Servicequalität lokaler Anbieter schwankt</li>
-                <li>Kaution wird vor Ort auf der Kreditkarte geblockt</li>
-              </ul>
-            </div>
-          </div>
-
-          <dl class="facts">
-            <div class="fact"><dt>Anbieter</dt><dd>international</dd></div>
-            <div class="fact"><dt>Stornierung</dt><dd>oft gratis</dd></div>
-            <div class="fact"><dt>Tipp</dt><dd>Vollkasko o. SB</dd></div>
-          </dl>
-
-          <div class="cta-row">
-            <a class="cta" href="#" rel="sponsored nofollow noopener" target="_blank">Mietwagen vergleichen
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-            </a>
-            <span class="cta-note">* Affiliate-Link zu Check24</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== VERGLEICH ===== -->
-      <h2 id="vergleich" class="reveal"><span class="sec-num">05 — Übersicht</span>Die vier Produkte im direkten Vergleich</h2>
-      <p class="reveal">Zur schnellen Orientierung haben wir die wichtigsten Kennzahlen unseres Tests gegenübergestellt. Die Empfehlung richtet sich danach, für wen sich der jeweilige Abschluss am stärksten lohnt.</p>
-
-      <div class="table-wrap reveal">
-        <table>
-          <thead>
-            <tr><th>Produkt</th><th>Note</th><th>Sparpotenzial</th><th>Am besten für</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><span class="pname">Strom &amp; Gas</span></td><td><span class="score">4,7</span></td><td>180–340&nbsp;€/Jahr</td><td><span class="badge">Grundversorgte</span></td></tr>
-            <tr><td><span class="pname">DSL &amp; Internet</span></td><td><span class="score">4,5</span></td><td>bis 200&nbsp;€ Bonus</td><td><span class="badge">Bonusjäger</span></td></tr>
-            <tr><td><span class="pname">C24 Bank</span></td><td><span class="score">4,8</span></td><td>Gebühren + Zinsen</td><td><span class="badge">Alltagskonto</span></td></tr>
-            <tr><td><span class="pname">Mietwagen</span></td><td><span class="score">4,4</span></td><td>Versicherung vor Ort</td><td><span class="badge">Urlauber</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- ===== FAQ ===== -->
-      <h2 id="faq" class="reveal"><span class="sec-num">06 — FAQ</span>Häufige Fragen</h2>
-      <div class="faq reveal">
-        <details open>
-          <summary>Ist die Nutzung von Check24 kostenlos?</summary>
-          <p>Ja. Der Vergleich und die Vermittlung sind für Verbraucher kostenlos. Das Portal finanziert sich über Provisionen der Anbieter — dieselbe Logik, über die auch unsere Affiliate-Links funktionieren. Auf Ihren Tarifpreis hat das keinen Einfluss.</p>
-        </details>
-        <details>
-          <summary>Lohnt sich der Wechsel wirklich jedes Jahr?</summary>
-          <p>In den meisten Fällen ja, besonders bei Strom und Gas. Viele attraktive Tarife sind Neukunden­angebote mit Bonus im ersten Jahr. Ein jährlicher Vergleich stellt sicher, dass Sie nicht in einen teuren Folgepreis rutschen.</p>
-        </details>
-        <details>
-          <summary>Worauf sollte ich beim Mietwagen besonders achten?</summary>
-          <p>Setzen Sie immer den Filter „Vollkasko ohne Selbstbeteiligung“ und prüfen Sie die Tankregelung. Diese beiden Punkte verhindern die häufigsten und teuersten Überraschungen direkt am Vermietungsschalter.</p>
-        </details>
-        <details>
-          <summary>Wie unabhängig ist diese Bewertung?</summary>
-          <p>Unsere Tests basieren auf eigener Nutzung über sechs Monate. Wir verdienen an Affiliate-Links eine Provision, falls Sie abschließen — die Noten und Empfehlungen entstehen jedoch unabhängig davon und werden nicht von Anbietern beeinflusst.</p>
-        </details>
-      </div>
-
-      <!-- ===== FINALE ===== -->
-      <section class="finale reveal" id="fazit">
-        <span class="sec-num">07 — Fazit</span>
-        <h2>Unser Urteil: ein verlässlicher Werkzeugkasten zum Sparen</h2>
-        <p>Check24 ist kein Wundermittel, aber ein hervorragend gebautes Werkzeug. Den größten und verlässlichsten Hebel liefert der <strong style="color:var(--gold-soft)">Strom- &amp; Gasvergleich</strong>, das überzeugendste Einzelprodukt ist die <strong style="color:var(--gold-soft)">C24 Bank</strong>. DSL und Mietwagen lohnen sich situativ — vor allem dank Boni und Versicherungsfiltern. Wer sich angewöhnt, einmal im Jahr fünf Minuten zu vergleichen, spart spürbar, ohne an Komfort einzubüßen.</p>
-        <a class="cta" href="#" rel="sponsored nofollow noopener" target="_blank">Jetzt alle Vergleiche starten
+  <!-- ============ FEATURED TEST ============ -->
+  <div class="section-head">
+    <div>
+      <span class="sec-num">Titel-Test</span>
+      <h2>Der große Praxistest</h2>
+    </div>
+  </div>
+  <div class="featured">
+    <div class="featured-inner reveal">
+      <div class="featured-text">
+        <span class="tag">Vergleichsportale · 6 Monate getestet</span>
+        <h3>Check24 im Praxistest 2026</h3>
+        <p>Strom, DSL, C24 Bank und Mietwagen — über sechs Monate im Alltag geprüft und mit über 360.000 Trustpilot-Bewertungen abgeglichen. Wo sich der Wechsel lohnt, und wo nicht.</p>
+        <a class="cta" href="check24.html">Test lesen
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
         </a>
-      </section>
-
-    </article>
+      </div>
+      <div class="featured-score">
+        <div>
+          <div class="label">Gesamtnote</div>
+          <div class="big">4,6<small>/5</small></div>
+        </div>
+        <ul>
+          <li>Strom &amp; Gas <b>4,7</b></li>
+          <li>DSL &amp; Internet <b>4,5</b></li>
+          <li>C24 Bank <b>4,8</b></li>
+          <li>Mietwagen <b>4,4</b></li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <!-- ============ LATEST TESTS ============ -->
+  <div class="section-head">
+    <div>
+      <span class="sec-num">Aktuell</span>
+      <h2>Neueste Tests</h2>
+    </div>
+    <a class="more" href="tests.html">Alle ansehen
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="test-grid">
+
+    <a class="test-card reveal" href="energie.html">
+      <div class="tc-top"><span class="tc-cat">Energie</span><span class="tc-score">4,7<small>/5</small></span></div>
+      <div class="tc-body">
+        <h3>Stromtarife 2026: Welcher Wechselbonus sich wirklich rechnet</h3>
+        <p>Bis zu 850&nbsp;€ Ersparnis, Boni bis 568&nbsp;€ — und die Folgepreis-Falle. Check24 und Verivox im Vergleich.</p>
+        <div class="tc-foot"><span>6. Juni 2026</span><span class="tc-read">Lesen <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span></div>
+      </div>
+    </a>
+
+    <a class="test-card reveal" href="internet.html">
+      <div class="tc-top"><span class="tc-cat">Internet</span><span class="tc-score">4,5<small>/5</small></span></div>
+      <div class="tc-body">
+        <h3>Glasfaser &amp; DSL 2026: Tarife ab 19,99&nbsp;€ und 170&nbsp;€ Bonus</h3>
+        <p>Verfügbarkeit, Effektivpreis und die besten Neukunden­aktionen von Telekom, Vodafone, O2 &amp; Co.</p>
+        <div class="tc-foot"><span>5. Juni 2026</span><span class="tc-read">Lesen <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span></div>
+      </div>
+    </a>
+
+    <a class="test-card reveal" href="finanzen.html">
+      <div class="tc-top"><span class="tc-cat">Finanzen</span><span class="tc-score">4,8<small>/5</small></span></div>
+      <div class="tc-body">
+        <h3>Tagesgeld &amp; Kreditkarte 2026: 2&nbsp;% Dauerzins und 0&nbsp;€ Gebühren</h3>
+        <p>Trade Republic, C24 Bank, Scalable und ING im Zins-Check — plus die beste Reisekreditkarte.</p>
+        <div class="tc-foot"><span>4. Juni 2026</span><span class="tc-read">Lesen <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span></div>
+      </div>
+    </a>
+
+    <a class="test-card reveal" href="reise.html">
+      <div class="tc-top"><span class="tc-cat">Reise</span><span class="tc-score">4,5<small>/5</small></span></div>
+      <div class="tc-body">
+        <h3>Mietwagen 2026: Check24 vs. billiger-mietwagen.de</h3>
+        <p>Vollkasko ohne Selbstbeteiligung, faire Tankregeln und wann Sie für den Sommer buchen sollten.</p>
+        <div class="tc-foot"><span>3. Juni 2026</span><span class="tc-read">Lesen <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span></div>
+      </div>
+    </a>
+
+    <a class="test-card reveal" href="check24.html">
+      <div class="tc-top"><span class="tc-cat">Vergleichsportale</span><span class="tc-score">4,6<small>/5</small></span></div>
+      <div class="tc-body">
+        <h3>Check24 im Praxistest: vier Produkte, die 2026 Geld sparen</h3>
+        <p>Der große Titel-Test: Strom, DSL, C24 Bank und Mietwagen über sechs Monate im Alltag geprüft.</p>
+        <div class="tc-foot"><span>6. Juni 2026</span><span class="tc-read">Lesen <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span></div>
+      </div>
+    </a>
+
+    <a class="test-card reveal" href="tests.html">
+      <div class="tc-top"><span class="tc-cat">Übersicht</span><span class="tc-score">∑</span></div>
+      <div class="tc-body">
+        <h3>Alle Tests auf einen Blick</h3>
+        <p>Sämtliche GELDWERT-Bewertungen, sortiert nach Bereich — von Energie bis Reise.</p>
+        <div class="tc-foot"><span>Laufend aktualisiert</span><span class="tc-read">Öffnen <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- ============ DISCLOSURE ============ -->
+  <div class="disclosure" style="margin-top:3rem;">
+    <div class="disclosure-inner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5v.01"/></svg>
+      <p style="margin:0;"><b>Transparenz-Hinweis (Werbung):</b> GELDWERT enthält Affiliate-Links. Schließen Sie über einen dieser Links ab, erhalten wir eine Provision — für Sie entstehen keine Mehrkosten. Unsere Bewertungen entstehen unabhängig davon. Genannte Werte sind Beispiele (Stand Juni 2026) und können je nach Region, Verbrauch und Anbieter abweichen.</p>
+    </div>
+  </div>
+
 </main>
 
 <!-- ============ FOOTER ============ -->
@@ -817,56 +220,20 @@
     <div>
       <div class="foot-brand">GELD<b>WERT</b></div>
       <p style="margin-top:.8rem;">Unabhängige Tests &amp; Empfehlungen zu Produkten und Dienstleistungen — von Energie und Internet über Finanzen bis Reise. Wir bauen unser Partner-Netzwerk laufend aus. Inhalte werden teilweise über Affiliate-Provisionen finanziert; redaktionelle Bewertungen entstehen davon unabhängig.</p>
-      <p style="margin-top:.6rem; font-size:.8rem;">Hinweis: Dieser Beitrag dient zu Demonstrations­zwecken. Genannte Werte sind Beispiele und können je nach Region, Nutzung und Anbieter abweichen. Keine Anlage- oder Rechtsberatung.</p>
+      <p style="margin-top:.6rem; font-size:.8rem;">Hinweis: Diese Seite dient zu Demonstrations­zwecken. Genannte Werte sind Beispiele und können je nach Region, Nutzung und Anbieter abweichen. Keine Anlage- oder Rechtsberatung.</p>
     </div>
     <nav class="foot-links" aria-label="Footer">
-      <a href="#">Energie</a>
-      <a href="#">Internet &amp; Mobilfunk</a>
-      <a href="#">Finanzen &amp; Banking</a>
-      <a href="#">Reise &amp; Mobilität</a>
-      <a href="#">Alle Tests</a>
+      <a href="energie.html">Energie</a>
+      <a href="internet.html">Internet &amp; Mobilfunk</a>
+      <a href="finanzen.html">Finanzen &amp; Banking</a>
+      <a href="reise.html">Reise &amp; Mobilität</a>
+      <a href="tests.html">Alle Tests</a>
       <a href="#">Partner werden</a>
     </nav>
   </div>
   <div class="copyright">© <span id="year"></span> GELDWERT · Werbung / Affiliate · Impressum · Datenschutz</div>
 </footer>
 
-<script>
-  // Reading progress
-  const progress = document.getElementById('progress');
-  const onScroll = () => {
-    const h = document.documentElement;
-    const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
-    progress.style.width = (scrolled * 100) + '%';
-  };
-  document.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
-
-  // Current year
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Reveal on scroll
-  const revealIO = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting){ e.target.classList.add('in'); revealIO.unobserve(e.target); }
-    });
-  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
-
-  // TOC scroll-spy
-  const links = [...document.querySelectorAll('.toc-link')];
-  const map = new Map();
-  links.forEach(l => { const id = l.getAttribute('href').slice(1); const sec = document.getElementById(id); if(sec) map.set(sec, l); });
-  const spyIO = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting){
-        links.forEach(l => l.classList.remove('active'));
-        const link = map.get(e.target);
-        if (link) link.classList.add('active');
-      }
-    });
-  }, {rootMargin:'-20% 0px -70% 0px', threshold:0});
-  map.forEach((_, sec) => spyIO.observe(sec));
-</script>
+<script src="assets/site.js"></script>
 </body>
 </html>
